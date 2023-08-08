@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eli Peffer</title>
+    <style>
+        *{
+            font-family: Montserrat;
+            text-align: center;
+        }
+        .text_spacer-5{
+            letter-spacing: 5px;
+        }
+        .text_spacer-2{
+            letter-spacing: 2px;
+        }
+        .text_align-left{
+            text-align: left;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .header{
+            margin-top: 400px;
+            margin-bottom: 400px;
+        }
+        .more_information{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .mt{
+            margin: 50px;
+        }
+        .content_1{
+            display: flex;
+            padding: 30px;
+            gap: 30px;
+        }
+        .content_1 h4{
+            text-align: left;
+        }
+        .content_1 p{
+            text-align: left;
+        }
+        .content_images{
+            width: 500px;
+            border-radius: 5%;
+        }
+        .image{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;;
+        }
+        .my_picture{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        .underlined_title{
+            margin-bottom: 50px;
+            width: 900px;
+        }
+        .logo{
+            width: 80px;
+        }
+        footer{
+            margin-top: 50px;
+        }
+        footer a{
+            color: #000000;
+            text-decoration: none;
+        }
+        @media (max-width: 900px)
+        {
+            .my_picture{
+                width: 500px;
+            }
+            .image{
+                width: 250px;
+                height: 250px;
+            }
+            .more_information{
+                width: 500px;
+            }
+            .underlined_title{
+                width: 500px;
+            }
+            .content_1{
+                flex-direction: column;
+            }
+            .content_1 h4{
+                text-align: center;
+            }
+            .content_1 p{
+                text-align: center;
+            }
+        }
+        @media (max-width: 500px)
+        {
+            .container{
+                width: 400px;
+                margin: 0;
+            }
+            .image{
+                width: 200px;
+                height: 200px;
+            }
+            .my_picture{
+                width: 300px;
+            }
+            .underlined_title{
+                width: 300px;
+            }
+            .more_information{
+                width: 350px;
+            }
+            .container_2{
+                width: 350px;
+            }
+            .content_images
+            {
+                width: 300px;
+            }
+            footer{
+                width: 350px;
+                margin: 0;
+            }
+        }
+        @media (max-width: 380px)
+        {
+            .container{
+                width: 300px;
+                /* margin-left: 40px; */
+            }
+            .my_picture{
+                width: 200px;
+            }
+            .underlined_title{
+                width: 300px;
+            }
+            .more_information{
+                width: 350px;
+            }
+            .container_2{
+                width: 350px;
+            }
+            .content_images{
+                width: 300px;
+            }
+            footer{
+                width: 300px;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@500&family=Libre+Baskerville&family=Montserrat:wght@200;400&family=Sono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="spacing text_spacer-5">Eli Peffer</h1>
+            <p>I am a programmer</p>
+        </div>
+        <div class="my_picture">
+            <img class="image" src="./me.jpg" alt="me picture">
+            <h2 class="spacing text_spacer-5">Hello.</h2>
+            <p>I am a website developer. I aspire to become a c# .net developer.</p>
+        </div>
+        <div class="more_information">
+            <div class="mt">
+                <h2 class="text_spacer-5" style="color: #00000065; font-size: 50px;"> ... </h2>
+            </div>
+            <div class="underlined_title">
+                <h3 class="text_spacer-2 text_align-left"> My Skills</h3>
+                <hr>
+            </div>
+            <div class="container_2">
+                <div class="content_1">
+                    <div>
+                        <img class="content_images" src="./dog.jpg" alt="dog image">
+                    </div>
+                    <div>
+                        <h4>Design & Development</h4>
+                        <p>I started learning to code when I was 12 years old because I wanted to make my own video games. Over time, I have gained a wealth of experience designing and developing mobile and web applications.</p>
+                    </div>
+                </div>
+                <div class="content_1">
+                    <div>
+                        <img class="content_images" src="./controller.jpg" alt="controller image">
+                    </div>
+                    <div>
+                        <h4>Video Games</h4>
+                        <p>
+                            My favorite hobby is gaming. I have a deep passion for playing video games and take pride in being a highly skilled gamer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="#">Linkdin</a>
+        <span> . </span>
+        <a href="#">Socials</a>
+        <span> . </span>
+        <a href="#">Website</a>
+        <br><br>
+        <p style="color: #00000065;"">Made with just</p>
+        <img class="logo" src="./html.png" alt="html picture">
+        <img class="logo" src="./css.png" alt="css picture">
+    </footer>
+</body>
+</html>
